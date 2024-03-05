@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyCallerApp</string>
+    <string name="titre1">Welcome</string>
+    <string name="preference_file_key">jose.mokeni.mycallerapp.mySharedPreferences</string>
+    <string name="saved_username_key">username</string>
+</resources>

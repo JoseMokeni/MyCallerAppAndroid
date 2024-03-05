@@ -61,7 +61,7 @@ public class Add extends AppCompatActivity {
         btn_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Add.this, "Cancel button pressed", Toast.LENGTH_SHORT).show();
+                btn_back.performClick();
             }
         });
 

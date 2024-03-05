@@ -33,8 +33,6 @@ public class List extends AppCompatActivity {
 
         //ArrayAdapter ad = new ArrayAdapter(List.this, android.R.layout.simple_list_item_1, Home.data);
 
-        // TODO: 31/01/2024 Recuperer les données depuis la base
-
         pm.open();
 
         data = new ArrayList<Profile>();
@@ -78,7 +76,7 @@ public class List extends AppCompatActivity {
         // MyProfileAdapter ad = new MyProfileAdapter(List.this, data);
         MyRecyclerProfileAdapter ad = new MyRecyclerProfileAdapter(List.this, data);
         // LinearLayoutManager manager = new LinearLayoutManager(List.this, LinearLayoutManager.HORIZONTAL, false);
-        GridLayoutManager manager = new GridLayoutManager(List.this, 2, GridLayoutManager.VERTICAL, true);
+        GridLayoutManager manager = new GridLayoutManager(List.this, 2, GridLayoutManager.VERTICAL, false);
         recyclerView_profiles.setLayoutManager(manager);
         recyclerView_profiles.setAdapter(ad);
     }

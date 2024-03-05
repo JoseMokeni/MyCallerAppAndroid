@@ -40,7 +40,6 @@ public class Add extends AppCompatActivity {
 
                 Profile p = new Profile(firstName, lastName, phone);
                 //Home.data.add(p);
-                // TODO: 31/01/2024 Rendre l'enregistrement dans la base SQLITE
                 pm.open();
                 if (pm.add(p.firstName, p.lastName, p.phone) > 0)
                     Toast.makeText(Add.this, "Profile added successfully", Toast.LENGTH_SHORT).show();
